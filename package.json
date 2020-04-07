@@ -1,0 +1,28 @@
+{
+  "name": "testnew",
+  "version": "1.0.0",
+  "description": "testcode",
+  "main": "index.js",
+  "dependencies": {
+    "browserstack-local": "^1.4.5",
+    "jasmine": "^3.5.0",
+    "protractor": "5.4.2"
+  },
+  "capabilities": {
+    "browserName": "chrome"
+  },
+  "scripts": {
+    "build": "babel app -d public",
+    "start": "npm run build && protractor conf.js",
+    "p": "protractor conf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "simmy",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+ 
+ }
+ 
+}
